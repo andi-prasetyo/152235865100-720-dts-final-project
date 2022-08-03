@@ -7,7 +7,7 @@ import { auth } from '../config/firebase';
 const Profile = () => {
   const [user] = useAuthState(auth);
   return (
-    <Box sx={{ margin: 10 }}>
+    <Box sx={{ display: 'flex' }} sx={{ margin: 10 }} >
       Welcome {user.email}
     </Box>
   )
